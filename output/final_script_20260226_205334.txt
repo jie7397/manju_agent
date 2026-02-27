@@ -1,0 +1,175 @@
+============================================================
+漫剧剧本 · 最终版
+类型：仙侠/玄幻
+============================================================
+
+────────────────────────────────────────
+【第 1 场】  古老秘境深处，山洞，阴沉，寒气逼人
+────────────────────────────────────────
+
+📌 动作：无具体人物动作，画面展现秘境的古老与神秘。
+
+📝 台词：
+   【旁白】 此乃古老秘境，五百年前，冰霜巫师曾在此留下《冰龙诀》。
+   【旁白】 此功源自上古冰龙淬炼，修至极境，可冰封万物，令时间凝滞。
+   【旁白】 然其道亦有天劫：心随境冻，终成行尸走肉，无数天才折戟于此。
+
+🖼️  分镜：extreme long shot, bird's eye view
+   运镜：镜头从高空缓缓下降，广角展现秘境的宏大与冰封的古战场，最终聚焦到山洞入口。
+   AI绘画Prompt：
+   ancient xianxia secret realm, deep inside a mountain cave, vast and mysterious, ancient stone walls with intricate giant dragon totems carved into them, cracks in the stone emitting faint ice crystal blue cold mist, distant view of a frozen ancient battlefield ruins, emphasizing danger and ancientness, cold blue, silver white, misty grey, deep shadow, ice crystal blue, faint teal glow, moonlight silver, extreme long shot, bird's eye view, xianxia anime style, ink wash aesthetic, detailed hanfu, --ar 9:16
+   视觉备注：此场景为纯环境描绘，无需人物。重点突出古老、神秘、冰雪仙侠的氛围，以及巨龙图腾的细节。
+
+🎵 音效：
+   环境音：古老山洞内空旷的自然回声，每隔5-8秒有水滴落入冰面的清脆回响，低沉而持续的寒风穿洞声，远处隐约传来冰川移动或崩裂的微弱隆隆声（整体低音量，营造宏大与寂寥感）
+   动作音效：无具体人物动作音效，仅有环境音效。
+   BGM方向：开场：低沉而神秘的弦乐长音（大提琴、低音提琴），配合箫的悠远独奏，营造古老秘境的庄重与孤独感（音量20%）→ 旁白期间：BGM保持极低音量，仅留弦乐的底色，偶尔点缀古筝的泛音，烘托叙事氛围，不抢旁白风头。
+
+💡 视觉备忘录：画面：古朴石壁上刻有巨龙图腾，缝隙间透出幽蓝寒气。远处有冰封的古战场遗迹，暗示秘境的危险与久远。
+
+────────────────────────────────────────
+【第 2 场】  山洞深处，冰石之上，深夜，孤寂
+────────────────────────────────────────
+
+📌 动作：少年苏凛跪坐于冰石，身着白色长袍，竹簪束发。他手中长剑，剑鞘虽碎，剑身却泛幽蓝微光，正是《冰龙诀》第三重“霜刃凝形”之兆。
+
+📝 台词：
+   【旁白】 少年苏凛，苏家嫡子，年方十七，却自幼被视作废柴。
+   【内心独白】 他心里明白，师父带他至此，非为机遇，不过是借他之手，取出秘籍。
+   【内心独白】 他于师父而言，已非徒弟，仅是工具。
+
+🖼️  分镜：close-up, eye level
+   运镜：镜头缓慢推近，聚焦在苏凛平静而略带疲惫的侧脸，以及剑刃幽蓝的光芒映照在他眼底的细节。
+   AI绘画Prompt：
+   1boy, 17 years old, black long hair tied with a bamboo hairpin, white ancient xianxia robe, simple and slightly worn fabric, sharp cold eyes, calm and emotionless expression, holding a blue glowing sword, sword emitting blue light, subtle frosty breath, kneeling on a jagged ice stone, deep inside a mountain cave, cave walls covered in fine frost and ice crystals, blue light from the sword reflecting in his eyes, cold blue, silver white, misty grey, deep shadow, ice crystal blue, faint teal glow, moonlight silver, close-up, eye level, xianxia anime style, ink wash aesthetic, detailed hanfu, --ar 9:16
+   视觉备注：苏凛的表情虽然平静，但眼神中要有一丝疲惫感。剑鞘碎裂的细节可以省略，但剑身发光是重点。洞壁的冰霜与白袍形成对比。
+
+🎵 音效：
+   环境音：山洞深处更加集中的寒风呼啸声，冰晶在洞壁上缓慢生长的细微滋滋声，远处水滴声变得更加稀疏与清冷（持续，低音量）
+   动作音效：【持续·低音量】幽蓝长剑散发出的微弱能量嗡鸣声，带有冰冷的金属质感；【偶发·0.5秒】苏凛调整坐姿时，衣袍与冰面轻微摩擦的细碎声。
+   BGM方向：旁白期间：延续上一场景的低沉弦乐与箫声，但加入一丝若有似无的古筝拨弦，暗示少年内心的复杂情绪（音量15%）→ 苏凛内心独白期间：BGM渐弱至几乎不可闻，仅留下极低频的持续音，突出内心的孤寂与决绝。
+
+💡 视觉备忘录：特写苏凛平静却略带疲惫的侧脸，剑刃的幽蓝光芒映照在他眼底。洞壁上细密的冰霜与苏凛的白袍形成对比。
+
+────────────────────────────────────────
+【第 3 场】  山洞入口处，光线昏暗
+────────────────────────────────────────
+
+📌 动作：苏凛身形未动。洞口处，传来阴沉声响。莫寒踏入洞中，目光贪婪地落在苏凛手中的幽蓝长剑上。
+
+📝 台词：
+   莫寒：“苏凛。”
+   莫寒：“找到了？果然与吾料想无异，你已将其激活。”
+
+🖼️  分镜：medium long shot, eye level
+   运镜：镜头从洞口莫寒的背影开始，随着他踏入洞中，缓慢平移，最终将苏凛的背影与剑光纳入画面。
+   AI绘画Prompt：
+   1man, 40s, black hair neatly tied, dark grey ancient xianxia robe, luxurious fabric, intricate patterns, smug and arrogant expression, greedy cold eyes, slender build, subtle silver accessories, entering a dimly lit mountain cave entrance, face partially obscured by shadow but greedy eyes clearly visible, in the background 1boy, 17 years old, black long hair tied with a bamboo hairpin, white ancient xianxia robe, simple and slightly worn fabric, sharp cold eyes, calm and emotionless expression, holding a blue glowing sword, sword emitting blue light, subtle frosty breath, back to camera, standing firm, cold blue, silver white, misty grey, deep shadow, ice crystal blue, faint teal glow, moonlight silver, medium long shot, eye level, xianxia anime style, ink wash aesthetic, detailed hanfu, --ar 9:16
+   视觉备注：莫寒的脸部要强调阴影和贪婪的眼神。苏凛的背影要显得坚定，剑光是画面中唯一的亮色，形成对比。
+
+🎵 音效：
+   环境音：山洞入口处传来的微弱风声，洞内冰晶生长声略微减弱，取而代之的是一种逐渐凝滞的寂静感。
+   动作音效：【入场·1.5秒】莫寒沉重而缓慢的脚步声，每一步都带有回声，暗示其压迫感；【特写·0.5秒】莫寒目光落在剑上时，一声轻微的、带有贪婪意味的喉音（例如：一声轻微的“哼”或吸气声）。
+   BGM方向：莫寒入场前：BGM在极低音量下，弦乐开始出现不和谐音符，制造不安与紧张感（音量25%）→ 莫寒开口后：BGM转为低沉的太鼓轻击，配合低音弦乐的持续音，营造出对话下的暗流涌动，压迫感渐强（音量40%）。
+
+💡 视觉备忘录：莫寒的脸在阴影中，只露出贪婪的眼神。苏凛的背影坚定，剑光是他唯一的色彩。
+
+────────────────────────────────────────
+【第 4 场】  山洞深处，苏凛与莫寒对峙
+────────────────────────────────────────
+
+📌 动作：苏凛缓缓起身，面无表情。他耗费三年苦功，才将《冰龙诀》修至第三重。
+
+📝 台词：
+   苏凛：“师父，您当初言明，带我至此，乃为助我突破瓶颈。”
+   莫寒：“吾确为助你突破。待你突破，将秘籍核心口诀告知于吾，汝之使命便已达成。”
+   莫寒：“至于之后……此洞中寒气，自会替吾料理一切。”
+   【内心独白】 他早已知晓。三个月前，便已听闻师父与大师兄的密谋——利用他激活秘籍，再将他弃于此地。他只是，静候这一日。
+
+🖼️  分镜：medium shot, eye level
+   运镜：镜头在苏凛与莫寒之间切换，先是莫寒高高在上的轻笑，再特写苏凛平静如水的眼神中蕴含的决绝。
+   AI绘画Prompt：
+   1boy, 17 years old, black long hair tied with a bamboo hairpin, white ancient xianxia robe, simple and slightly worn fabric, sharp cold eyes, calm and emotionless expression, holding a blue glowing sword, sword emitting blue light, subtle frosty breath, slowly standing up, confronting, in front of him 1man, 40s, black hair neatly tied, dark grey ancient xianxia robe, luxurious fabric, intricate patterns, smug and arrogant expression, greedy cold eyes, slender build, subtle silver accessories, smirking arrogantly, eyes showing deep coldness, deep inside a mountain cave, ice stone background, cold blue, silver white, misty grey, deep shadow, ice crystal blue, faint teal glow, moonlight silver, medium shot, eye level, xianxia anime style, ink wash aesthetic, detailed hanfu, --ar 9:16
+   视觉备注：莫寒的笑容要带着轻蔑与寒意。苏凛的表情虽然平静，但眼神中要透出深不见底的决绝。构图上两人形成对峙感。
+
+🎵 音效：
+   环境音：山洞内的寒风声变得更加尖锐，冰晶滋滋声略微增强，整体氛围更加压抑，仿佛空气也凝固了。
+   动作音效：【动作·0.8秒】苏凛缓慢起身时，衣袍与冰面摩擦的轻微沙沙声，伴随关节的轻微咯吱声；【对话后·0.3秒】莫寒轻蔑的“哼”声，带有回声；【对话后·0.5秒】莫寒挥手时的衣袍破风声。
+   BGM方向：苏凛起身前：BGM延续紧张感，低音弦乐与太鼓节奏感增强，仿佛心跳（音量45%）→ 对话期间：BGM在莫寒台词时略微增强，突出其傲慢；在苏凛台词时略微减弱，突出其平静下的深意（音量动态在40%-55%之间）→ 苏凛内心独白时：BGM再次减弱，仅留低沉的弦乐长音，烘托其内心深处的决绝与等待。
+
+💡 视觉备忘录：莫寒高高在上地轻笑一声，眼中寒意渐深。苏凛的眼神平静如水，却蕴含着深不见底的决绝。
+
+────────────────────────────────────────
+【第 5 场】  山洞深处，气氛压抑
+────────────────────────────────────────
+
+📌 动作：苏凛终于转过身，目光直视莫寒。莫寒微愣，旋即不以为意地挥手。
+
+📝 台词：
+   苏凛：“师父，弟子只想问您一句。”
+   莫寒：“说吧。”
+   苏凛：“您可曾后悔过，当初收下我这个徒弟？”
+
+🖼️  分镜：medium shot, eye level
+   运镜：镜头平稳地展示两人的对峙，从苏凛的询问眼神到莫寒的不耐烦姿态。
+   AI绘画Prompt：
+   1boy, 17 years old, black long hair tied with a bamboo hairpin, white ancient xianxia robe, simple and slightly worn fabric, sharp cold eyes, calm and emotionless expression, holding a blue glowing sword, sword emitting blue light, subtle frosty breath, turning around and looking directly at 1man, 40s, black hair neatly tied, dark grey ancient xianxia robe, luxurious fabric, intricate patterns, smug and arrogant expression, greedy cold eyes, slender build, subtle silver accessories, who is slightly surprised then dismissively waving his hand with an impatient expression, deep inside a mountain cave, cold blue, silver white, misty grey, deep shadow, ice crystal blue, faint teal glow, moonlight silver, medium shot, eye level, xianxia anime style, ink wash aesthetic, detailed hanfu, --ar 9:16
+   视觉备注：苏凛的眼神中带着一丝最后的、深沉的询问。莫寒则表现出明显的不耐烦和轻蔑，暗示他并未将苏凛放在眼里。
+
+🎵 音效：
+   环境音：山洞内寒意更甚，风声变得低沉而持续，冰晶生长声几乎不可闻，取而代之的是一种令人窒息的寂静。
+   动作音效：【动作·0.5秒】苏凛转身时，衣袍的轻微摩擦声；【动作·0.5秒】莫寒不以为意挥手时，衣袖带起的轻微风声。
+   BGM方向：苏凛转身前：BGM进入一个短暂的、几乎静默的阶段，只剩极低频的持续音，营造“暴风雨前的宁静”（音量10%）→ 对话期间：BGM保持极低音量，但在苏凛问话后，弦乐中出现一个不和谐的、拉长的音符，暗示情绪的临界点（音量15%）。
+
+💡 视觉备忘录：苏凛的眼神带着一丝最后的询问，莫寒则是一副不耐烦的姿态。
+
+────────────────────────────────────────
+【第 6 场】  山洞深处，寒意渐浓
+────────────────────────────────────────
+
+📌 动作：莫寒先是一怔，随即放声大笑。苏凛轻轻颔首，似已寻得答案。他抬起手中长剑，剑身幽蓝光芒骤然大盛，寒意如潮涌出。石壁瞬时结霜，莫寒面露慌乱，下意识后退。
+
+📝 台词：
+   莫寒：“后悔？痴人说梦！若非你尚有激活古籍之天赋，吾岂会多看你一眼？”
+   莫寒：“你……你修至何等境界？！”
+
+🖼️  分镜：medium shot, low angle
+   运镜：镜头快速拉近至苏凛抬剑的瞬间，随后迅速拉远，展现剑光爆发、寒气涌出以及莫寒惊恐后退的连锁反应。
+   AI绘画Prompt：
+   1boy, 17 years old, black long hair tied with a bamboo hairpin, white ancient xianxia robe, simple and slightly worn fabric, sharp cold eyes, calm and emotionless expression, holding a blue glowing sword, sword emitting blue light, subtle frosty breath, gently nodding, then raising his sword which is suddenly emitting an intensely bright and powerful blue light, cold energy surging outwards, cave walls instantly frosting over and crystallizing, in the background 1man, 40s, black hair neatly tied, dark grey ancient xianxia robe, luxurious fabric, intricate patterns, smug and arrogant expression, greedy cold eyes, slender build, subtle silver accessories, laughing wildly then suddenly startled and retreating in panic and terror, cold blue, silver white, misty grey, deep shadow, ice crystal blue, faint teal glow, moonlight silver, medium shot, low angle, xianxia anime style, ink wash aesthetic, detailed hanfu, --ar 9:16
+   视觉备注：莫寒的狂笑与苏凛的沉默形成强烈对比，随后莫寒的表情从狂傲瞬间转为极度惊恐。剑光爆发时，画面以强烈的幽蓝色为主调，突出寒气的爆发力和侵蚀感，石壁结霜的细节要清晰。
+
+🎵 音效：
+   环境音：山洞内寒气骤然加剧，空气中弥漫着冰冷的能量感，风声变得狂暴而尖锐，伴随细微的冰晶爆裂声（持续，中等音量）
+   动作音效：【对话后·1.2秒】莫寒狂妄的大笑声，带有回声；【动作·0.3秒】苏凛轻微的颔首声（衣领摩擦或发丝轻动）；【动作·0.8秒】长剑出鞘的清脆金属摩擦声，由高音向低音扫过；【核心爆发·2.5秒】剑身幽蓝光芒骤然大盛，发出强大的冰能冲击波音效（由低频能量涌动迅速升至高频尖锐啸叫，带有冰晶碎裂的复合质感），同时伴随石壁被迅速冰封、结霜的密集咔嚓声与滋滋蔓延声；【动作·1.0秒】莫寒惊慌失措后退时，脚下冰面被踩碎的急促咔嚓声，伴随其急促的喘息或惊呼。
+   BGM方向：莫寒狂笑时：BGM突然爆发，太鼓重击，弦乐群奏，营造狂妄与压迫感（音量60%）→ 苏凛抬剑瞬间：BGM瞬时切换，古筝急促拨弦，配合激昂的管弦乐高潮，迅速攀升至巅峰（音量90%）→ 剑光爆发时：BGM与冰能音效交织，以磅礴的弦乐和太鼓节奏烘托力量感，环境音在此时被BGM和SFX覆盖，但仍作为底色存在（音量85%）→ 莫寒后退时：BGM略微降低，转为低沉的弦乐长音，留下震撼的余韵，预示着力量的不可逆转。
+
+💡 视觉备忘录：莫寒的狂笑与苏凛的沉默形成强烈对比。剑光爆发时，画面以蓝色为主调，突出寒气的侵蚀感。莫寒的表情从狂傲转为惊恐。
+
+────────────────────────────────────────
+【第 7 场】  冰封的山洞，气氛冰冷肃杀
+────────────────────────────────────────
+
+📌 动作：苏凛未曾作答，只是缓缓走向莫寒。每一步，皆踏碎脚下薄冰，发出清脆声响。苏凛声音依旧平静，然其眼眸，却在这幽蓝光芒中，渐次冻结。
+
+📝 台词：
+   苏凛：“弟子记得师父曾言，修《冰龙诀》至终境者，心不复痛。”
+   苏凛：“我现在方才明白——那并非因其强大，而是，他们已然无需在乎任何人。”
+   【旁白】 莫寒脸色骤变，转身欲逃。然其脚下，已是冰封一片。
+
+🖼️  分镜：medium long shot, dutch angle
+   运镜：镜头从苏凛缓慢而坚定的步伐开始，跟随他，同时展现脚下薄冰碎裂的细节，最终定格在被冰封的莫寒身上，镜头略带倾斜，强调紧张与绝望。
+   AI绘画Prompt：
+   1boy, 17 years old, black long hair tied with a bamboo hairpin, white ancient xianxia robe, simple and slightly worn fabric, sharp cold eyes, calm and emotionless expression, holding a blue glowing sword, sword emitting blue light, subtle frosty breath, slowly walking towards 1man, 40s, black hair neatly tied, dark grey ancient xianxia robe, luxurious fabric, intricate patterns, smug and arrogant expression, greedy cold eyes, slender build, subtle silver accessories, who is trapped and frozen by rapidly spreading blue ice on his feet, expression of extreme terror and despair, entire mountain cave covered in thick, glowing blue ice layers, broken ice shards underfoot, cold blue, silver white, misty grey, deep shadow, ice crystal blue, faint teal glow, moonlight silver, medium long shot, dutch angle, xianxia anime style, ink wash aesthetic, detailed hanfu, --ar 9:16
+   视觉备注：苏凛的眼神特写，瞳孔深处有冰晶闪烁，强调其心境的彻底冰封。莫寒的恐惧与绝望要通过面部表情和肢体语言充分展现。整个山洞被幽蓝色冰层覆盖，营造出时间凝滞的冰冷肃杀感。
+
+🎵 音效：
+   环境音：整个山洞被冰封后的死寂感，只有极致寒冷带来的空气凝滞声，偶尔传来冰层内部微弱的龟裂声，营造出一种冰冷肃杀的氛围（持续，低音量）
+   动作音效：【动作·每步0.6秒】苏凛每一步踏在薄冰上，发出清脆而有节奏的“咔嚓”碎裂声，带有回响；【特写·0.8秒】苏凛眼眸冻结时，细微的冰晶凝结声，带有清脆的碎裂感；【动作·1.5秒】莫寒欲逃时，脚下冰层迅速蔓延并将其冻结的“滋滋”声与“咔嚓”声，伴随其绝望的挣扎声或呜咽。
+   BGM方向：苏凛走向莫寒时：BGM从高潮迅速衰减，转为低沉而空灵的弦乐独奏，伴随古筝的冰冷泛音，营造出悲凉而强大的氛围（音量40%）→ 苏凛台词期间：BGM音量进一步降低，仅留极简的弦乐长音，烘托其平静下的残酷（音量20%）→ 旁白与莫寒被冰封时：BGM再次增强，但并非激昂，而是以缓慢、沉重的弦乐和太鼓，营造出宿命般的悲剧感与冰冷的威严，最终以一个悠长而冰冷的弦乐尾音结束（音量60%）。
+
+💡 视觉备忘录：苏凛的眼神特写，瞳孔深处有冰晶闪烁。莫寒欲逃却被迅速蔓延的冰霜困住，表情定格在极度的恐惧与绝望之中。整个山洞被幽蓝色冰层覆盖，如同时间凝滞。
+
+============================================================
+剧本生成完毕，共 7 个场景
+============================================================

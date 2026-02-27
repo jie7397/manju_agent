@@ -1,0 +1,7 @@
+langgraph>=0.2.0
+langchain-core>=0.3.0
+langchain-openai>=0.2.0
+# langchain-google-genai>=2.0.0  # 使用 Gemini 时取消注释
+# langchain-ollama>=0.2.0         # 使用 Ollama 时取消注释
+python-dotenv>=1.0.0
+rich>=13.0.0                       # 进度可视化（可选，无则自动降级为纯文本）
