@@ -57,7 +57,7 @@ export LLM_MODEL=gpt-4o
 # 或使用 Gemini
 export LLM_PROVIDER=gemini
 export GOOGLE_API_KEY=your-google-key
-export LLM_MODEL=gemini-1.5-pro
+export LLM_MODEL=gemini-2.5-flash
 
 # 或使用 Ollama（本地，无需 Key）
 export LLM_PROVIDER=ollama
