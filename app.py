@@ -2,6 +2,22 @@ import gradio as gr
 import os
 import tempfile
 from pathlib import Path
+import logging
+
+# Set up logging for tracking page visits and usage
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(message)s',
+    handlers=[
+        logging.FileHandler("manju_access.log", encoding='utf-8'),
+        logging.StreamHandler()
+    ]
+)
+logger = logging.getLogger("ManjuTracker")
+
+def track_visit(request: gr.Request):
+    ip = request.client.host if request else "Unknown IP"
+    logger.info(f"[Visit] IP: {ip} has opened the page.")
 
 # Fix python path just in case
 import sys
@@ -13,7 +29,10 @@ from utils.chunker import split_into_chunks, get_chunk_info
 
 import config
 
-def generate_script(text_input, file_input, novel_type, llm_provider, llm_model, api_key, chunk_size, chunk_overlap):
+def generate_script(text_input, file_input, novel_type, llm_provider, llm_model, api_key, chunk_size, chunk_overlap, request: gr.Request = None):
+    ip = request.client.host if request else "Unknown IP"
+    logger.info(f"[Task] IP: {ip} | Start generate | Type: {novel_type} | Provider: {llm_provider}:{llm_model}")
+    
     if not text_input and not file_input:
         yield "请提供文本或上传txt文件"
         return
@@ -177,6 +196,8 @@ with gr.Blocks(title="漫剧智能剧本生成") as demo:
         inputs=[text_input, file_input, novel_type, llm_provider, llm_model, api_key, chunk_size, chunk_overlap],
         outputs=output_text
     )
+
+    demo.load(fn=track_visit)
 
 if __name__ == "__main__":
     demo.queue().launch(
