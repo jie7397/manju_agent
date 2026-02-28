@@ -5,6 +5,9 @@ config.py (更新版)
 """
 
 import os
+from dotenv import load_dotenv
+
+load_dotenv(override=True)
 
 # ── LLM 配置 ──────────────────────────────────────────────────────────────────
 LLM_PROVIDER = os.getenv("LLM_PROVIDER", "openai")
@@ -14,6 +17,7 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
 OPENAI_BASE_URL = os.getenv("OPENAI_BASE_URL", "https://api.openai.com/v1")
 
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY", "")
+SILICONFLOW_API_KEY = os.getenv("SILICONFLOW_API_KEY", "")
 
 # ── 工作流控制 ────────────────────────────────────────────────────────────────
 MAX_REVISIONS = int(os.getenv("MAX_REVISIONS", "3"))
