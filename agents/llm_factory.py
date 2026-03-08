@@ -23,7 +23,6 @@ def get_llm(temperature: float = 0.7):
     """
     # 动态获取当前配置/环境变量
     llm_provider = os.getenv("LLM_PROVIDER", getattr(config, "LLM_PROVIDER", "openai"))
-    llm_model = os.getenv("LLM_MODEL", getattr(config, "LLM_MODEL", ""))
 
     if llm_provider == "openai":
         try:
@@ -31,6 +30,7 @@ def get_llm(temperature: float = 0.7):
         except ImportError:
             raise ImportError("请安装 langchain-openai: pip install langchain-openai")
 
+        llm_model = os.getenv("LLM_MODEL") or getattr(config, "OPENAI_MODEL", "gpt-4o")
         api_key = getattr(config, "OPENAI_API_KEY", "") or os.getenv(
             "OPENAI_API_KEY", ""
         )
@@ -39,7 +39,7 @@ def get_llm(temperature: float = 0.7):
         ) or os.getenv("OPENAI_BASE_URL", "https://api.openai.com/v1")
 
         return ChatOpenAI(
-            model=llm_model or "gpt-4o",
+            model=llm_model,
             api_key=api_key or None,
             base_url=base_url,
             temperature=temperature,
@@ -53,12 +53,13 @@ def get_llm(temperature: float = 0.7):
                 "请安装 langchain-google-genai: pip install langchain-google-genai"
             )
 
+        llm_model = os.getenv("LLM_MODEL") or "gemini-2.5-flash"
         api_key = getattr(config, "GOOGLE_API_KEY", "") or os.getenv(
             "GOOGLE_API_KEY", ""
         )
 
         return ChatGoogleGenerativeAI(
-            model=llm_model or "gemini-2.5-flash",
+            model=llm_model,
             google_api_key=api_key or None,
             temperature=temperature,
         )
@@ -69,12 +70,13 @@ def get_llm(temperature: float = 0.7):
         except ImportError:
             raise ImportError("请安装 langchain-openai: pip install langchain-openai")
 
+        llm_model = os.getenv("SILICONFLOW_MODEL") or getattr(config, "SILICONFLOW_MODEL", "deepseek-ai/DeepSeek-V3")
         api_key = getattr(config, "SILICONFLOW_API_KEY", "") or os.getenv(
             "SILICONFLOW_API_KEY", ""
         )
 
         return ChatOpenAI(
-            model=llm_model or "deepseek-ai/DeepSeek-V3",
+            model=llm_model,
             api_key=api_key or None,
             base_url="https://api.siliconflow.cn/v1",
             temperature=temperature,
@@ -86,8 +88,9 @@ def get_llm(temperature: float = 0.7):
         except ImportError:
             raise ImportError("请安装 langchain-ollama: pip install langchain-ollama")
 
+        llm_model = os.getenv("LLM_MODEL") or "llama3.1"
         return ChatOllama(
-            model=llm_model or "llama3.1",
+            model=llm_model,
             temperature=temperature,
         )
 

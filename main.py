@@ -33,6 +33,7 @@ from config import (
     HUMAN_REVIEW,
     CHUNK_SIZE,
     CHUNK_OVERLAP,
+    SUPPORTED_IMAGE_STYLES,
 )
 from graph import get_workflow
 from state import WorkflowState
@@ -178,9 +179,19 @@ def main():
     parser.add_argument(
         "--type", "-t", default="仙侠/玄幻", choices=SUPPORTED_NOVEL_TYPES
     )
+    parser.add_argument(
+        "--style", "-s", default="真人电影风格", 
+        choices=list(SUPPORTED_IMAGE_STYLES.keys()),
+        help="图片画风：真人电影风格 / 动漫风格 / 插画风格 / 3D渲染风格"
+    )
     parser.add_argument("--output", "-o", default="./output")
     parser.add_argument("--no-save", action="store_true")
     args = parser.parse_args()
+
+    # 设置图片风格（覆盖环境变量）
+    import config
+    config.IMAGE_STYLE_TYPE = args.style
+    os.environ["IMAGE_STYLE_TYPE"] = args.style
 
     validate_env()
 
@@ -202,6 +213,7 @@ def main():
         llm_model=LLM_MODEL,
         chunk_count=len(chunks),
         max_revisions=MAX_REVISIONS,
+        image_style=args.style,
     )
 
     if len(chunks) > 1:

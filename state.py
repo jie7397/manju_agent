@@ -12,6 +12,37 @@ state.py (更新版)
 from typing import TypedDict, Optional, Literal
 
 
+# ── 大纲提取器数据结构 ──────────────────────────────────────────────────────
+
+class CoreCharacter(TypedDict):
+    """大纲中的核心角色（简化版）"""
+    name: str
+    role: str  # 主角/反派/配角/导师等
+    importance: int  # 1-5，5为最高
+    brief_description: str
+
+
+class ChapterSegment(TypedDict):
+    """章节分段"""
+    segment_id: int
+    chapters: str  # 如 "1-3"
+    theme: str
+    core_characters: list[str]
+    summary: str
+
+
+class StoryOutline(TypedDict):
+    """大纲提取器输出的故事大纲"""
+    title: str
+    genre: str
+    core_characters: list[CoreCharacter]
+    main_plot_summary: str
+    key_scenes: list[str]
+    chapter_segments: list[ChapterSegment]
+
+
+# ── 角色数据结构 ────────────────────────────────────────────────────────────
+
 class CharacterProfile(TypedDict):
     """单个角色档案"""
 
@@ -52,6 +83,7 @@ class StoryboardScene(TypedDict):
     image_prompt: str
     camera_movement: str
     visual_notes: str
+    active_character_names: list  # 当前镜头中出现的主要角色名称列表（用于角色一致性追踪）
 
 
 class SoundScene(TypedDict):
@@ -76,24 +108,29 @@ class WorkflowState(TypedDict):
     """
     整个多智能体工作流的全局状态
 
-    数据流向（v2）：
-      Input → character_extractor → screenwriter → storyboard → sound_designer
-                                                                     │
-                                              [HUMAN_REVIEW=true时] ↓
-                                                              human_reviewer
-                                                                     │
-                                                              ↓─────────────────────────┐
-                                                           director                     │
-                                                       ↙         ↘                     │
-                                                     END    打回给各 Agent ←────────────┘
+    数据流向（v4 - 大纲驱动）：
+      Input → outline_extractor → character_extractor → screenwriter → production_designer → storyboard → ...
+                    │
+                    ↓
+            story_outline (核心角色、主线摘要、分段规划)
+                    │
+                    ↓ (后续 agent 基于大纲工作)
     """
 
     # ── 输入 ──────────────────────────────────────────────
     novel_text: str
     novel_type: str
 
+    # ── 大纲提取器输出（v4 新增）─────────────────────────
+    story_outline: Optional[StoryOutline]
+
     # ── 角色档案（新） ─────────────────────────────────────
     character_sheet: Optional[CharacterSheet]
+
+    # ── 图片生成产出（v3 新增）────────────────────────────
+    character_images: dict  # {character_id: {"anchor_sheet": path, "prompt": str}}
+    scene_images: dict  # {location_id: {"scene_anchor": path, "prompt": str}}
+    image_prompts: dict  # 存储所有图片的 prompt，供审核使用
 
     # ── 编剧输出 ──────────────────────────────────────────
     screenplay_scenes: list[ScreenplayScene]
@@ -107,7 +144,7 @@ class WorkflowState(TypedDict):
     # ── 导演审核 ──────────────────────────────────────────
     director_feedback: list[DirectorFeedback]
     revision_target: Optional[
-        Literal["screenwriter", "storyboard", "sound_designer", "approved"]
+        Literal["screenwriter", "storyboard", "sound_designer", "character_extractor", "production_designer", "approved"]
     ]
     revision_count: int
 

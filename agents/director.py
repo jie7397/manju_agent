@@ -59,11 +59,15 @@ def _extract_json_from_response(text: str) -> dict:
 def _determine_primary_revision_target(feedbacks: list[DirectorFeedback]) -> str:
     """
     当有多个 Agent 需要修改时，决定主要退回目标。
-    优先级：screenwriter > storyboard > sound_designer
-    （因为编剧是基础，改了编剧之后，分镜和音效往往需要跟着更新）
+    优先级：character_extractor > production_designer > screenwriter > storyboard > sound_designer
+    （因为角色是基础，改了角色之后，其他往往需要跟着更新）
     """
     targets = {fb["target_agent"] for fb in feedbacks}
-    if "screenwriter" in targets:
+    if "character_extractor" in targets:
+        return "character_extractor"
+    elif "production_designer" in targets:
+        return "production_designer"
+    elif "screenwriter" in targets:
         return "screenwriter"
     elif "storyboard" in targets:
         return "storyboard"
@@ -99,6 +103,11 @@ def director_node(state: WorkflowState) -> dict:
         }
 
     # ── 构建分析 Prompt ──────────────────────────────────────────────────────────
+    # v3: 增加图片 Prompt 审核
+    image_prompts = state.get("image_prompts", {})
+    character_prompts = {k: v for k, v in image_prompts.items() if k.startswith("char_") or not k.startswith("scene_")}
+    scene_prompts = {k: v for k, v in image_prompts.items() if k.startswith("scene_")}
+    
     prompt = render_prompt(
         _PROMPT_TEMPLATE,
         novel_text=state.get("novel_text", ""),
@@ -111,6 +120,8 @@ def director_node(state: WorkflowState) -> dict:
         sound_scenes=json.dumps(
             state.get("sound_scenes", []), ensure_ascii=False, indent=2
         ),
+        character_prompts=json.dumps(character_prompts, ensure_ascii=False, indent=2),
+        scene_prompts=json.dumps(scene_prompts, ensure_ascii=False, indent=2),
         revision_count=revision_count,
     )
 

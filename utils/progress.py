@@ -115,6 +115,7 @@ class WorkflowProgress:
         llm_model: str,
         chunk_count: int = 1,
         max_revisions: int = 3,
+        image_style: str = "真人电影风格",
     ):
         """打印工作流启动横幅"""
         if RICH_AVAILABLE:
@@ -128,6 +129,7 @@ class WorkflowProgress:
                 )
                 + "\n"
                 f"[bold]LLM[/bold]：{llm_provider} / {llm_model}\n"
+                f"[bold]图片画风[/bold]：{image_style}\n"
                 f"[bold]最大审核轮数[/bold]：{max_revisions}"
             )
             console.print(
@@ -148,6 +150,7 @@ class WorkflowProgress:
                 + (f"  →  分 {chunk_count} 段处理" if chunk_count > 1 else "")
             )
             print(f"  LLM：{llm_provider} / {llm_model}")
+            print(f"  图片画风：{image_style}")
 
     def print_summary(
         self,

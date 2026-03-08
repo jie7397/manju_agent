@@ -10,14 +10,36 @@ from dotenv import load_dotenv
 load_dotenv(override=True)
 
 # ── LLM 配置 ──────────────────────────────────────────────────────────────────
-LLM_PROVIDER = os.getenv("LLM_PROVIDER", "openai")
-LLM_MODEL = os.getenv("LLM_MODEL", "gpt-4o")
+LLM_PROVIDER = os.getenv("LLM_PROVIDER", "siliconflow")
 
+# OpenAI
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
 OPENAI_BASE_URL = os.getenv("OPENAI_BASE_URL", "https://api.openai.com/v1")
+OPENAI_MODEL = os.getenv("LLM_MODEL", "gpt-4o")
 
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY", "")
+# SiliconFlow (硅基流动)
 SILICONFLOW_API_KEY = os.getenv("SILICONFLOW_API_KEY", "")
+SILICONFLOW_BASE_URL = os.getenv("SILICONFLOW_BASE_URL", "https://api.siliconflow.cn/v1")
+SILICONFLOW_MODEL = os.getenv("SILICONFLOW_MODEL", "deepseek-ai/DeepSeek-V3")
+
+# Volcengine (火山引擎)
+ARK_API_KEY = os.getenv("ARK_API_KEY", "")
+ARK_LLM_MODEL = os.getenv("ARK_LLM_MODEL", "doubao-1-5-pro-32k-250115")
+
+# Google
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY", "")
+
+# 根据 provider 选择正确的模型名（用于显示）
+def _get_llm_model():
+    provider = LLM_PROVIDER.lower()
+    if provider == "siliconflow":
+        return SILICONFLOW_MODEL
+    elif provider == "volcengine":
+        return ARK_LLM_MODEL
+    else:
+        return OPENAI_MODEL
+
+LLM_MODEL = _get_llm_model()
 
 # ── 工作流控制 ────────────────────────────────────────────────────────────────
 MAX_REVISIONS = int(os.getenv("MAX_REVISIONS", "3"))
@@ -35,6 +57,34 @@ CHUNK_OVERLAP = int(os.getenv("CHUNK_OVERLAP", "200"))
 
 # ── 调试模式 ──────────────────────────────────────────────────────────────────
 DEBUG = os.getenv("DEBUG", "false").lower() == "true"
+
+# ── 图片风格配置（v3 新增）─────────────────────────────────────────────────────
+# 支持的风格类型（使用中文）：
+# - 真人电影风格: 真人电影演员风格（默认），严禁动漫/插画词汇
+# - 动漫风格: 日系动画质感
+# - 插画风格: 艺术手绘质感
+# - 3D渲染风格: 游戏CG质感
+IMAGE_STYLE_TYPE = os.getenv("IMAGE_STYLE_TYPE", "真人电影风格")
+
+# 支持的图片风格类型（中文 key）
+SUPPORTED_IMAGE_STYLES = {
+    "真人电影风格": {
+        "name": "真人电影风格",
+        "description": "真人电影演员风格，严禁动漫/插画词汇",
+    },
+    "动漫风格": {
+        "name": "动漫风格",
+        "description": "日系动画质感，强调线条和色彩",
+    },
+    "插画风格": {
+        "name": "插画风格",
+        "description": "艺术手绘质感，强调绘画感",
+    },
+    "3D渲染风格": {
+        "name": "3D渲染风格",
+        "description": "游戏CG质感，强调立体感和光影",
+    },
+}
 
 # ── 支持的小说类型 ─────────────────────────────────────────────────────────────
 SUPPORTED_NOVEL_TYPES = [
